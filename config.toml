@@ -1,0 +1,99 @@
+baseurl = "https://tintinsnowy.com"
+languageCode = "en-us"
+title = "Sherry's blog"
+# should also be the same with the configuration of Disqus
+disqusShortname = "sherrysblog"
+googleAnalytics = "UA-68204765-1"
+
+# Define the number of posts per page
+paginate = 10
+
+footnotereturnlinkcontents = "↩"
+# canonifyURLs = true
+theme = "hugo-icarus-theme"
+
+#rssURI = "feed/" #deprecated feature
+
+# Comment the themesDir option if you use this theme in production
+# hemesDir = "../.."
+ 
+[permalinks]
+    post = "/:year/:month/:day/:slug"
+
+[params]
+    # Tell me who you are
+    author = "Sherry Yang"
+    cover = "banners/cover.jpg" #the cover of blog
+    bio = "Think - Code - Art"
+    location = "Aachen"
+    site_description = ""
+    copyright  = "Powered by [Hugo](//gohugo.io). Theme by [PPOffice](http://github.com/ppoffice)."
+    avatar = "css/tintin.jpg"
+    #gravatar = "yangxiaoli1994@gmail.com"
+    logo = "css/images/logo.jpg"
+    disable_mathjax = false # set to true to disable MathJax
+
+    # define which types of pages should be shown. By default the type with the most regular pages
+    mainSections = ["post"]
+
+    # Format dates with Go's time formatting
+    date_format = "January 02, 2006"
+
+    # Add custom assets with their paths relative to the static folder
+    custom_css = []
+    custom_js  = []
+
+# Create custom menu entries by defining a label and a link for
+# them. Since you can also link posts, you've the option the
+# place the links before or after them.
+#
+# E.g.: "Home" appears before all linked posts in the menu
+# and "Tags" / "Categories" after them.
+
+[[params.menu]]
+    before = true
+    label  = "Home"
+    link   = "/"
+
+[[params.menu]]
+    before = false
+    label  = "Tags"
+    link   = "tags/"
+
+[[params.menu]]
+    before = false
+    label  = "Categories"
+    link   = "categories/"
+
+[params.profile]
+    follow_button = "https://github.com/tintinsnowy"
+   
+[social]
+# Add your social network accounts to the profile section on the left
+# by entering your username. The links to your account will be
+# created automatically.
+    github          = "tintinsnowy"
+    instagram       = "sherry689468"
+    #youtube         = "nikimonikado"
+    #vimeo           = "nikimonikado"
+    #tumblr          = "nikimonikado"
+    #linkedin        = "nikimonikado"
+    #pinterest       = "nikimonikado"
+    #googleplus      = "nikimonikado"
+    facebook        = "100011002713908"
+    #twitter         = "nikimonikado"
+
+
+
+# Enable and disable widgets for the right sidebar
+[params.widgets]
+    recent_articles = true
+    categories = true
+    tags = true
+    tag_cloud = true
+    #archives = false # This feature is yet to be implemented because of limitations in Hugo's way of working.
+    search = true
+
+[params.slider]
+    enable = true
+    num_features = 5 # The slider picks up the banner images from the N most recent posts, where num_features is N.
