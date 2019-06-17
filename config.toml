@@ -25,12 +25,12 @@ theme = "hugo-icarus-theme"
     author = "Sherry Yang"
     cover = "banners/cover.jpg" #the cover of blog
     bio = "Think - Code - Art"
-    location = "Aachen"
+    location = "Germany"
     site_description = ""
     copyright  = "Powered by [Hugo](//gohugo.io). Theme by [PPOffice](http://github.com/ppoffice)."
-    avatar = "css/tintin.jpg"
+    avatar = "https://s3.eu-central-1.amazonaws.com/tintinsnowy.staitc/profile/tintin.jpg"#"css/tintin.jpg"
     #gravatar = "yangxiaoli1994@gmail.com"
-    logo = "css/images/logo.jpg"
+    logo = "https://s3.eu-central-1.amazonaws.com/tintinsnowy.staitc/profile/logo.jpg"#"css/images/logo.jpg"
     disable_mathjax = false # set to true to disable MathJax
 
     # define which types of pages should be shown. By default the type with the most regular pages

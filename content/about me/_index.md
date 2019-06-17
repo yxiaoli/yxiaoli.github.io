@@ -13,4 +13,3 @@ I've been studying Software Systems Engineering at RWTH Aachen.
 5 years ago, I decided to signed up a blog in internet out of knowledge archivement.
 Gradually more elements have been added in. `Thinking`,`Book review`,`Life`,`Travel`,`Photograph`,maybe more will be included.
 
-Writing is a kind of lifestyle.
