@@ -53,24 +53,29 @@ ResourceGroup--> Storage Account--> Containers --> Blobs
 ![event subscribe](https://cdn-images-1.medium.com/max/1600/1*TmMc5wsTbUi6CkfrK-ojOA.png)
 
 
-## methods 1: using Azure portal(recommended)
+## Method 1: using Azure portal(recommended)
 
-https://docs.microsoft.com/de-de/azure/azure-functions/functions-create-storage-blob-triggered-function
-https://docs.microsoft.com/de-de/azure/azure-functions/functions-bindings-event-grid#create-a-subscription
-### 1. create the Azure function
+
+[How to create storage blob trigger](https://docs.microsoft.com/de-de/azure/azure-functions/functions-create-storage-blob-triggered-function)
+
+[Azure function bingding event grid](https://docs.microsoft.com/de-de/azure/azure-functions/functions-bindings-event-grid#create-a-subscription)
+
     
   1. Create an Azure Function app 
-
-  using the Azure portal
-
+    using the Azure portal
   ![from Azure portal to find out](/function-app-create-flow.png)
 
-  3. choose more Template--> Event Grid trigger 
-  
-  4. select Add Event Grid subscription.    
-  5. Create Event Subscription
+  2. Expand your function app and click the **+** button next to Functions. If this is the first function in your function app, select **In-portal** then Continue. Otherwise, go to step three.
+  ![in-portal](/function-app-quickstart-choose-portal.png)
 
-## methods 2: using Azure cli 
+  3. choose more Template--> Event Grid trigger 
+
+  4. select **Add Event Grid subscription**.  
+     
+  5. Create Event Subscription
+    you will see more details about configuring the Event Subscription
+
+## Method 2: using Azure cli 
  
   **prerequisites:**
   - Install [Azure Core Tools version 2.x](https://docs.microsoft.com/de-de/azure/azure-functions/functions-run-local#v2).
@@ -120,13 +125,14 @@ az login
 
       ```
    3. customize your function
-        image
+        
         
    4. upload the Function App to Azure:
-       
-       > $func azure functionapp publish {your-function-name}
+      
+      ``` 
+      $func azure functionapp publish ${your-function-name}
+      ```
         
-  https://docs.microsoft.com/de-de/azure/azure-functions/functions-create-first-azure-function-azure-cli
   
 
 
@@ -136,11 +142,8 @@ az login
    return **BlobBlockList**  -->  BlobBlock(id, )
    
 1. [Event Grid concepts](https://docs.microsoft.com/en-us/azure/event-grid/concepts)
-2. blobtrigger == Event Grid:  https://docs.microsoft.com/de-de/azure/azure-functions/functions-bindings-storage-blob#triggerb
-3. Storage queue vs. service bus queue(https://docs.microsoft.com/de-de/azure/service-bus-messaging/service-bus-azure-and-service-bus-queues-compared-contrasted)
-4. Storage queue vs. event hub : https://hackernoon.com/azure-functions-choosing-between-queues-and-event-hubs-dac4157eee1c
-https://docs.microsoft.com/bs-latn-ba/azure/event-grid/compare-messaging-services
-5. Logic apps vs. azure functions apps  :https://docs.microsoft.com/en-us/azure/event-grid/event-handlers
-6. blob trigger vs. event trigger
-7. create blob trigger from console:
-https://docs.microsoft.com/de-de/azure/azure-functions/functions-create-storage-blob-triggered-function
+2. [blobtrigger vs Event Grid](https://docs.microsoft.com/de-de/azure/azure-functions/functions-bindings-storage-blob#triggerb)
+3. [Storage queue vs. service bus](https://docs.microsoft.com/de-de/azure/service-bus-messaging/service-bus-azure-and-service-bus-queues-compared-contrasted)
+4. [what is event hub](https://hackernoon.com/azure-functions-choosing-between-queues-and-event-hubs-dac4157eee1c
+5. [comparing messages](https://docs.microsoft.com/bs-latn-ba/azure/event-grid/compare-messaging-services)
+6. [Logic apps vs. azure functions apps ](https://docs.microsoft.com/en-us/azure/event-grid/event-handlers)
