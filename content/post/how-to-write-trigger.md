@@ -37,7 +37,12 @@ based on the event.
 **Event Grid Domain**- An event domain is a management tool for large numbers of Event Grid topics related to the same application
 
 **Event Grid Topics**
-    
+
+### Architecture
+
+![event subscribe](https://cdn-images-1.medium.com/max/1600/1*TmMc5wsTbUi6CkfrK-ojOA.png)
+
+
 # About Azure Storage Blob
 Azure Blob storage is Microsoft's object storage solution for the cloud.
 ![relationship](https://docs.microsoft.com/en-us/azure/storage/blobs/media/storage-blob-introduction/blob1.png)
@@ -47,11 +52,6 @@ ResourceGroup--> Storage Account--> Containers --> Blobs
 [docmentation](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blobs-overview)
 
 # Solution 1: build Azure function
-
-## Architecture
-
-![event subscribe](https://cdn-images-1.medium.com/max/1600/1*TmMc5wsTbUi6CkfrK-ojOA.png)
-
 
 ## Method 1: using Azure portal(recommended)
 
