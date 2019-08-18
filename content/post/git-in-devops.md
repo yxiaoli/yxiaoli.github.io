@@ -5,7 +5,7 @@ tags = ["DevOps","Git","SDE"]
 categories = ["tech"]
 description = ""
 menu = ""
-banner = "banners/cpus.jpg"
+banner = "https://app.yinxiang.com/shard/s33/res/3c069b50-5948-4333-a838-f3d05bac37fc/IMGP5712.JPG"
 +++
 
 # Git tips in DevOps workflow
@@ -60,7 +60,6 @@ git reset $(hash-code)
 
 ## Overwrite complete a branch
 the **production branch** regularly `completely compy` the latest verion of **dev branch**, and replace the old version(not merge) to avoid conflicts.
-
 ```
 git checkout -B production_branch dev_branch 
 ```
