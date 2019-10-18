@@ -4,7 +4,7 @@ title = "Sherry's blog"
 # should also be the same with the configuration of Disqus
 disqusShortname = "sherrysblog"
 googleAnalytics = "UA-68204765-1"
-
+#likeCoinName = "tintinsnowy" 
 # Define the number of posts per page
 paginate = 10
 
@@ -28,9 +28,9 @@ theme = "hugo-icarus-theme"
     location = "Germany"
     site_description = ""
     copyright  = "Powered by [Hugo](//gohugo.io). Theme by [PPOffice](http://github.com/ppoffice)."
-    avatar = "https://s3.eu-central-1.amazonaws.com/tintinsnowy.staitc/profile/tintin.jpg"#"css/tintin.jpg"
+    avatar = "css/tintin.jpg"
     #gravatar = "yangxiaoli1994@gmail.com"
-    logo = "https://s3.eu-central-1.amazonaws.com/tintinsnowy.staitc/profile/logo.jpg"#"css/images/logo.jpg"
+    logo = "css/images/logo.jpg"
     disable_mathjax = false # set to true to disable MathJax
 
     # define which types of pages should be shown. By default the type with the most regular pages

@@ -8,8 +8,12 @@
         <div class="article-entry" itemprop="articleBody">
             {{ .Content }}
         </div>
+
         {{ partial "article_footer" . }}
     </div>
+            <div id="likecoin_thread">
+            <iframe src="https://button.like.co/tintinsnowy" float=center width=100% height="700"></iframe> 
+        </div>
 
     {{ partial "prev_next_post" . }}
 </article>

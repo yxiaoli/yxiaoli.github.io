@@ -5,6 +5,7 @@ tags = ["Azure","Storage Queue","msg queue","microservice"]
 categories = ["tech"]
 description = "This article will introduce Azure Event Grid and respective componentsd"
 # 此处可以写摘要！
+disable_profile = true
 menu = ""
 banner = "banners/microsoft-azure.png"
 +++
