@@ -6,7 +6,7 @@ categories = ["tech"]
 description = ""
 # 此处可以写摘要！
 menu = ""
-banner = "https://s3.eu-central-1.amazonaws.com/tintinsnowy.staitc/banner/apache-setting.jpg"
+banner = "banners/apache-setting.jpg"
 +++
 
 # Excerpt

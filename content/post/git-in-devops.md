@@ -5,7 +5,7 @@ tags = ["DevOps","Git","SDE"]
 categories = ["tech"]
 description = ""
 menu = ""
-banner = "https://app.yinxiang.com/shard/s33/res/3c069b50-5948-4333-a838-f3d05bac37fc/IMGP5712.JPG"
+banner = "banners/IMGP5712.JPG"
 +++
 
 # Git tips in DevOps workflow
@@ -13,7 +13,7 @@ banner = "https://app.yinxiang.com/shard/s33/res/3c069b50-5948-4333-a838-f3d05ba
 This is the second phase of my current project. After the Beta version of 
 the project, I upgraded and shift the whole project into DevOps 
 workflow. Git, is most essential part of the version control.
-So in this post, I will share some tips that I have encountered
+So in this post, I will shsare some tips that I have encountered
 
 ## Git Branching Models
 There should be at least two models: `Dev` and `Master`. `Dev` branch is the front line defensing bugs. This branch
@@ -21,7 +21,7 @@ will proceed first round of testing.
 the `Master` or `Production` branch is used for release the stable version of the software. Still this branch will
 go through all possible tests and report bugs.
    
-![branch modes](https://app.yinxiang.com/shard/s33/res/c2ac5402-ba38-44bb-a0c4-0fbeda9ccc9f/Screenshot%20from%202019-07-29%2014-26-40.png)
+![branch modes](https://app.yinxiang.com/shard/s33/res/d3525737-ac00-45cb-b4c2-98441aebb472/Screenshot%20from%202019-07-29%2014-26-40.png?search=Blog)
 
 ## Protect master branch 
 In case the abuse of master branch, or any dangerous action to the release branch,
@@ -30,7 +30,7 @@ when the feature
 https://stackoverflow.com/questions/38864405/how-to-restrict-access-to-master-branch-on-git
 
 
-## create/ feature branch
+## Create/ feature branch
 git pull before your any actions
 ```console
 git pull
@@ -42,7 +42,7 @@ git branch -D wanted_to_delete
 
 ```
 
-## retrieve committed code
+## Retrieve committed code
 you have committed code / added all the code, but forget to push to the remote repo. After had checked out to another branch,
 and changed back to previous branch, you found out that all the changes are gone. How to retrieve code? This 
 method may apply to other scenarios.
