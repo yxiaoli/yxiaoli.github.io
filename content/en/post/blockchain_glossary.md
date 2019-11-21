@@ -6,7 +6,8 @@ categories = ["tech"]
 description = ""
 # 此处可以写摘要！
 menu = "The fundamental step to master a technique is to get familiar with its concepts first"
-banner = "banners/blockchain1.jpg"
+banner = "banners/pythonp.JPG"
+slug="a-propos"
 +++
 
 # Preface

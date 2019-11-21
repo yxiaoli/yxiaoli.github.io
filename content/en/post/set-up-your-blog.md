@@ -82,9 +82,10 @@ This step is extremely important, different theme has different ways of setting,
 Hugo can read your configuration as JSON, YAML or TOML. Hugo supp orts parameters custom configuration too. Refer to the theme that you’ve chosen for details.
 
 …….. you can see how it looks like in localhost:(the hugo-icarus is the name of theme, you need to change it), open http://localhost:1313/
-
- sherry@sherry:~/code/hugo/tintinsnowy.github.io$ sudo /home/sherry/code/hugo/hugo server --buildDrafts --watch
-
+```commandline
+ sherry@sherry:~/code/hugo/tintinsnowy.github.io
+ $sudo /home/sherry/code/hugo/hugo server --buildDrafts --watch
+```
 If you are satisfied with your blog in localhost, you want to display it on web right? Okay do the following steps!
 
 ## Create your blog’s repository on Github
@@ -102,7 +103,7 @@ For example, my account name is `tintinsnowy` , so I have to name my repository 
 
 ### 2. Build your static website
 
-    $hugo --theme=hugo-icarus --baseUrl="http://tintinsnowy.github.io/"
+    $hugo --theme=hugo-icarus --baseUrl="https://tintinsnowy.github.io/"
 
 Upload your website
 
@@ -117,7 +118,7 @@ See your website
 
 In your github repository setting, you can see this:
 
-Your site is published at `http://tintinsnowy.github.io`
+Your site is published at `https://tintinsnowy.github.io`
 
 Now, it seems like the end of our Project. Yet if you wish your blog’s address more unique, you may buy a custom domain.
 

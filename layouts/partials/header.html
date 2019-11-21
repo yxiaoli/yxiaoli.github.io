@@ -10,7 +10,7 @@
       <nav id="main-nav">
           {{ range .Site.Params.menu }}
           {{ if .before }}
-          <a class="main-nav-link" href="{{ .link | absURL }}">{{ .label }}</a>
+          <a class="main-nav-link" href="{{ .URL | absURL }}">{{ .Name }}</a>
           {{ end }}
           {{ end }}
 
@@ -20,7 +20,7 @@
 
           {{ range .Site.Params.menu }}
           {{ if not .before }}
-          <a class="main-nav-link" href="{{ .link | absURL }}">{{ .label }}</a>
+          <a class="main-nav-link" href="{{ .URL | absURL }}">{{ .Name }}</a>
           {{ end }}
           {{ end }}
       </nav>
@@ -45,7 +45,7 @@
           <tr>
           {{ range .Site.Params.menu }}
           {{ if .before }}
-          <td><a class="main-nav-link" href="{{ .link | absURL }}">{{ .label }}</a></td>
+          <td><a class="main-nav-link" href="{{ .link | absURL }}">{{ .Name }}</a></td>
           {{ end }}
           {{ end }}
 
@@ -55,7 +55,7 @@
 
           {{ range .Site.Params.menu }}
           {{ if not .before }}
-          <td><a class="main-nav-link" href="{{ .link  | absURL }}">{{ .label }}</a></td>
+          <td><a class="main-nav-link" href="{{ .link  | absURL }}">{{ .Name }}</a></td>
           {{ end }}
           {{ end }}
           <td>

@@ -8,8 +8,6 @@ menu = ""
 banner = "banners/IMGP5712.JPG"
 +++
 
-# Git tips in DevOps workflow
-
 This is the second phase of my current project. After the Beta version of 
 the project, I upgraded and shift the whole project into DevOps 
 workflow. Git, is most essential part of the version control.

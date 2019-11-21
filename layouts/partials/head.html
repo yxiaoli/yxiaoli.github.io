@@ -32,7 +32,8 @@
     {{ template "_internal/schema.html" . }}
     {{ template "_internal/twitter_cards.html" . }}
     {{ partial "head_custom" . }}
-
+    {{ if .IsTranslated }}
+    {{ end }}
     {{ if .Params.disable_profile | and .Params.disable_widgets }}
     <style>
         .full-width {
@@ -40,7 +41,11 @@
         }
     </style>
     {{ end }}
-
+        <nav class="LangNav">
+    {{ range .Translations }}
+        <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+    {{ end}}
+    </nav>
     <!-- needs to be loaded first for following scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
