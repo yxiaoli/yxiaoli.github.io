@@ -5,7 +5,7 @@ tags = ["cloud","kubernetes","INFR"]
 categories = ["tech"]
 description = "THe How-to guids to set up kafka python applications on kubernetes, when the msg resource is mapr-stream"
 menu = ""
-banner = "https://app.yinxiang.com/shard/s33/res/d2e0b66b-1525-4965-8700-ef5f7ebe4cd7/PSX_20191018_225433.jpg?search=Blog"
+banner = "https://app.yinxiang.com/shard/s33/res/d2e0b66b-1525-4965-8700-ef5f7ebe4cd7/PSX_20191018_225433.jpg"
 +++
 
 THe How-to guids to set up kafka python applications on kubernetes, when the msg resource is mapr-stream

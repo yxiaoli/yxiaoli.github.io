@@ -5,7 +5,7 @@ tags = ["shell", "MAINT", "SDE"]
 categories = ["tech"]
 description = "1"
 menu = "Shell programming is such an essential skill that you need to master, if you want to step further into the Linux/Unix world."
-banner = "banners/IMGP5712.JPG"
+banner = "banners/xx.jpg"
 +++
 
 Shell programming is such an essential skill that you need to master, if you want to step further into the Linux/Unix world. Being able to program on shell will accelerate your operation work. Because in daily operation, you cannot avoid *searching&analying logs*, *running and proceeding* other system scripts periodically, etc. I know it may bore you easily, that is why I want to write down those tips.
