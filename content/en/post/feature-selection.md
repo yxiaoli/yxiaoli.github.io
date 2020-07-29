@@ -39,7 +39,7 @@ Steps:
 
 1. Compute the sample covariance matrix,
 2. Compute the Principal components and eigenvalues of the
-Covariance /Correlation matrix **A**.
+Covariance or Correlation matrix **A**. 
 3. Choose the subspace dimension **n**, we get new matrix **A_n**,
    the vectors **Vi** are the rows of **A_n**. 
 4. Cluster the vectors **|Vi|**, using K-Means
@@ -48,6 +48,12 @@ Covariance /Correlation matrix **A**.
 # Code
 
 ```python
+from sklearn.decomposition import PCA
+from sklearn.cluster import KMeans
+from collections import defaultdict
+from sklearn.metrics.pairwise import euclidean_distances
+from sklearn.preprocessing import StandardScaler
+
 class PFA(object):
     def __init__(self, n_features, q=None):
         self.q = q
@@ -60,7 +66,7 @@ class PFA(object):
         sc = StandardScaler()
         X = sc.fit_transform(X)
 
-        pca = PCA(n_components=self.q).fit(X)
+        pca = PCA(n_components=self.q).fit(X) # calculation Cov matrix is embeded in PCA
         A_q = pca.components_.T
 
         kmeans = KMeans(n_clusters=self.n_features).fit(A_q)

@@ -1,11 +1,11 @@
 +++
-title =  "Git tips in DevOps workflow"
+title =  "Advanced Git Usage"
 date =  2019-06-28T09:57:55+01:00
-tags = ["DevOps","Git","SDE"]
+tags = ["Git","SDE"]
 categories = ["tech"]
 description = ""
 menu = ""
-banner = "banners/IMGP5712.JPG"
+banner = "banners/windrad.JPG"
 +++
 
 This is the second phase of my current project. After the Beta version of 
@@ -18,7 +18,7 @@ There should be at least two Branches: `Dev` and `Master`. `Dev` branch is the f
 will proceed first round of testing. All the feature, hotfix, customized branches should firstly be merged to `Dev` branch.
 The `Master` or `Production` branch is used for release the stable version of the software. In some scenarios, we need a `Test` branch, between `Dev` and `Master`(`Production`).
    
-![branch modes](https://app.yinxiang.com/shard/s33/res/d3525737-ac00-45cb-b4c2-98441aebb472/Screenshot%20from%202019-07-29%2014-26-40.png?search=Blog)
+![branch modes](https://app.yinxiang.com/shard/s33/res/d3525737-ac00-45cb-b4c2-98441aebb472/Screenshot%20from%202019-07-29%2014-26-40.png)
 
 ## Protect master branch 
 In case the abuse of master branch, or any dangerous action to the release branch,

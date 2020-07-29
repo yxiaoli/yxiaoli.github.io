@@ -3,9 +3,9 @@ title =  "10 Basic Tips on Bash Scripting to Optimize Your Operation Work"
 date =  2020-03-01T09:57:55+01:00
 tags = ["shell", "MAINT", "SDE"]
 categories = ["tech"]
-description = "1"
-menu = "Shell programming is such an essential skill that you need to master, if you want to step further into the Linux/Unix world."
-banner = "banners/xx.jpg"
+description = "Shell programming is such an essential skill that you need to master, if you want to step further into the Linux/Unix world."
+menu = ""
+banner = "banners/cherry.JPG"
 +++
 
 Shell programming is such an essential skill that you need to master, if you want to step further into the Linux/Unix world. Being able to program on shell will accelerate your operation work. Because in daily operation, you cannot avoid *searching&analying logs*, *running and proceeding* other system scripts periodically, etc. I know it may bore you easily, that is why I want to write down those tips.
