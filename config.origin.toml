@@ -1,7 +1,7 @@
 baseurl = "https://www.xiaoli-yang.com"
 #languageCode = "en-us"
-defaultContentLanguage = "en"
-#title = "Sherry's blog"
+DefaultContentLanguage = "en"
+title = "Sherry's blog"
 # should also be the same with the configuration of Disqus
 disqusShortname = "sherrysblog"
 googleAnalytics = "UA-68204765-1"
@@ -16,19 +16,12 @@ theme = "hugo-icarus-theme"
 #rssURI = "feed/" #deprecated feature
 
 # Comment the themesDir option if you use this theme in production
-# themesDir = "../.."
-
+# hemesDir = "../.."
+ 
 [permalinks]
-    post = "/:year/:month/:day/:title"
+    post = "/:year/:month/:day/:slug"
 
-
-[languages]
-  [languages.en]
-    title = "Sherry's blog"
-    weight = 1
-    contentDir = "content/en"
-    languageName = "English"
-
+[params]
     # Tell me who you are
     author = "Sherry Yang"
     cover = "banners/cover.jpg" #the cover of blog
@@ -42,6 +35,7 @@ theme = "hugo-icarus-theme"
     disable_mathjax = false # set to true to disable MathJax
 
     # define which types of pages should be shown. By default the type with the most regular pages
+    mainSections = ["post"]
 
     # Format dates with Go's time formatting
     date_format = "January 02, 2006"
@@ -49,66 +43,6 @@ theme = "hugo-icarus-theme"
     # Add custom assets with their paths relative to the static folder
     custom_css = []
     custom_js  = []
-    [[languages.en.menu.main]]
-        url = "/"
-        name = "Home"
-        weight = 1
-
-    [[languages.en.menu.main]]
-        name  = "Tags"
-        url   = "/tags/"
-        weight = 2
-
-    [[languages.en.menu.main]]
-        name  = "Categories"
-        url   = "/categories/"
-        weight = 3
-
-    [languages.en.profile]
-        follow_button = "https://github.com/yxiaoli"
-
-  [languages.ch]
-    title = "阿歇的博客" 
-    weight = 2
-    contentDir = "content/ch"
-    languageName = "中文"
-    author = "Sherry Yang"
-    cover = "banners/cover.jpg" #the cover of blog
-    bio = "思考者 - Code - Art"
-    location = "Germany"
-    site_description = ""
-    copyright  = "Powered by [Hugo](//gohugo.io). Content by Xiaoli Yang"
-    avatar = "css/tintin.jpg"
-    logo = "css/images/logo.jpg"
-    disable_mathjax = false # set to true to disable MathJax
-
-    # define which types of pages should be shown. By default the type with the most regular pages
-
-    # Format dates with Go's time formatting
-    date_format = "January 02, 2006"
-
-    # Add custom assets with their paths relative to the static folder
-    custom_css = []
-    custom_js  = []
-    [[languages.ch.menu.main]]
-        weight = 1
-        name  = "主页"
-        url   = "/"
-
-    [[languages.ch.menu.main]]
-        weight = 2
-        name  = "Tags"
-        url   = "/tags/"
-
-    [[languages.ch.menu.main]]
-        weight = 3
-        name  = "分类"
-        url   = "/categories/"
-
-    [languages.ch.profile]
-        follow_button = "https://github.com/yxiaoli"
-
-
 
 # Create custom menu entries by defining a label and a link for
 # them. Since you can also link posts, you've the option the
@@ -117,6 +51,23 @@ theme = "hugo-icarus-theme"
 # E.g.: "Home" appears before all linked posts in the menu
 # and "Tags" / "Categories" after them.
 
+[[params.menu]]
+    before = true
+    label  = "Home"
+    link   = "/"
+
+[[params.menu]]
+    before = false
+    label  = "Tags"
+    link   = "tags/"
+
+[[params.menu]]
+    before = false
+    label  = "Categories"
+    link   = "categories/"
+
+[params.profile]
+    follow_button = "https://github.com/yxiaoli"
    
 [social]
 # Add your social network accounts to the profile section on the left
@@ -134,8 +85,6 @@ theme = "hugo-icarus-theme"
     #twitter         = "nikimonikado"
 
 
-[params]
-    mainSections = ["post"]
 
 # Enable and disable widgets for the right sidebar
 [params.widgets]

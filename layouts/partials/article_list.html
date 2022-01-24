@@ -1,5 +1,7 @@
-{{ $paginator := .Paginate (where .Data.Pages "Section" "in" .Site.Params.mainSections) }}
+{{ $paginator := .Paginate (where .Site.Pages "Section" "in" .Site.Params.mainSections) }}
 {{ range $paginator.Pages }}
+
+{{ if (not (eq .Title "Posts")) }}
 <article class="article article-type-post" itemscope="" itemprop="blogPost">
     <div class="article-inner">
         {{ if and (isset .Params "banner") (not (eq .Params.banner "")) }}
@@ -22,6 +24,9 @@
         {{ partial "article_footer" . }}
     </div>
 </article>
+{{ end }}
+
+
 {{ end }}
 
 {{ partial "pagination" . }}
