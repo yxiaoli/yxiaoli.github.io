@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Concepts on Sherry&#39;s blog</title>
+    <link>https://www.xiaoli-yang.com/tags/concepts/</link>
+    <description>Recent content in Concepts on Sherry&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Powered by [Hugo](//gohugo.io). Content by Xiaoli Yang</copyright>
+    <lastBuildDate>Thu, 09 Nov 2017 09:57:55 +0100</lastBuildDate>
+    
+	<atom:link href="https://www.xiaoli-yang.com/tags/concepts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Blockchain glossary</title>
+      <link>https://www.xiaoli-yang.com/2017/11/09/blockchain-glossary/</link>
+      <pubDate>Thu, 09 Nov 2017 09:57:55 +0100</pubDate>
+      
+      <guid>https://www.xiaoli-yang.com/2017/11/09/blockchain-glossary/</guid>
+      <description>Preface Block A set of transactions that are bundled together and added to the chain at the same time.
+Blockchain ApplicationIn a blockchain application, the blockchain will store the state of the system, in addition to the immutable record of transactions that created that state. A client application will be used to send transactions to the blockchain. The smart contracts will encode some (if not all) of the business logic.</description>
+    </item>
+    
+  </channel>
+</rss>

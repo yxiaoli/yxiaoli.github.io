@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SDE on Sherry&#39;s blog</title>
+    <link>https://www.xiaoli-yang.com/tags/sde/</link>
+    <description>Recent content in SDE on Sherry&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Powered by [Hugo](//gohugo.io). Content by Xiaoli Yang</copyright>
+    <lastBuildDate>Sun, 05 Apr 2020 08:57:55 +0100</lastBuildDate>
+    
+	<atom:link href="https://www.xiaoli-yang.com/tags/sde/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Common Traps in Python - part 1</title>
+      <link>https://www.xiaoli-yang.com/2020/04/05/common-traps-in-python-part-1/</link>
+      <pubDate>Sun, 05 Apr 2020 08:57:55 +0100</pubDate>
+      
+      <guid>https://www.xiaoli-yang.com/2020/04/05/common-traps-in-python-part-1/</guid>
+      <description>Part 1 - The traps of List in Python 1. Assignment trap Note: Assignment with an = on lists does not make a copy. Instead, assignment makes the two variables point to the one list in memory.
+ colors = [&#39;red&#39;, &#39;blue&#39;, &#39;green&#39;] b = colors ## Does not copy the list b [1] = &amp;quot;yellow&amp;quot; print (colors) # [&#39;red&#39;, &#39;yellow&#39;, &#39;green&#39;] print(b) # [&#39;red&#39;, &#39;yellow&#39;, &#39;green&#39;]  and you may get really risky return</description>
+    </item>
+    
+    <item>
+      <title>10 Basic Tips on Bash Scripting to Optimize Your Operation Work</title>
+      <link>https://www.xiaoli-yang.com/2020/03/01/10-basic-tips-on-bash-scripting-to-optimize-your-operation-work/</link>
+      <pubDate>Sun, 01 Mar 2020 09:57:55 +0100</pubDate>
+      
+      <guid>https://www.xiaoli-yang.com/2020/03/01/10-basic-tips-on-bash-scripting-to-optimize-your-operation-work/</guid>
+      <description>Shell programming is such an essential skill that you need to master, if you want to step further into the Linux/Unix world. Being able to program on shell will accelerate your operation work. Because in daily operation, you cannot avoid searching&amp;amp;analying logs, running and proceeding other system scripts periodically, etc. I know it may bore you easily, that is why I want to write down those tips.
+Bash Shell Script Basics We usually call it as Bash Shell, because Bash is the most widely used shell interpreter.</description>
+    </item>
+    
+    <item>
+      <title>Advanced Git Usage</title>
+      <link>https://www.xiaoli-yang.com/2019/06/28/advanced-git-usage/</link>
+      <pubDate>Fri, 28 Jun 2019 09:57:55 +0100</pubDate>
+      
+      <guid>https://www.xiaoli-yang.com/2019/06/28/advanced-git-usage/</guid>
+      <description>Introduction Git works more than as a version controlling tool, it glues the teamwork together. It is widely used by almost all developers nowadays. Basic usages can be git-cheatsheet
+However, in some scenarios, more advanced skills are required. In this post, I will present some usages, which can impove our efficiency.
+1. git stash: store temporary dirty working branch Scenario: Interrupted workflow When you are in the middle of coding, your boss comes in and demands that you fix something immediately.</description>
+    </item>
+    
+  </channel>
+</rss>

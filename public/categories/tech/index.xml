@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tech on Sherry&#39;s blog</title>
+    <link>https://www.xiaoli-yang.com/categories/tech/</link>
+    <description>Recent content in tech on Sherry&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Powered by [Hugo](//gohugo.io). Content by Xiaoli Yang</copyright>
+    <lastBuildDate>Wed, 29 Jul 2020 15:06:14 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.xiaoli-yang.com/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Three-Stage Branch Model applied in DevOps - CI part</title>
+      <link>https://www.xiaoli-yang.com/2020/07/29/three-stage-branch-model-applied-in-devops-ci-part/</link>
+      <pubDate>Wed, 29 Jul 2020 15:06:14 +0200</pubDate>
+      
+      <guid>https://www.xiaoli-yang.com/2020/07/29/three-stage-branch-model-applied-in-devops-ci-part/</guid>
+      <description>I am working on a data platform project, the product itself is composed of several microservices. Our team is under great pressure of operation and mantainance. Thanks to the DevOps helps us keep the balance of development and deployment.
+In this post, I illustrate how we maintain the CI(continuous integration) part, which contains: the branch strategy we adopt, the concept of DevOps, overview of the workflow, the tips.
+next post, I will continue to explain the CD part(cotinous deployment)</description>
+    </item>
+    
+    <item>
+      <title>Using Arrow to Handle Errors and Exceptions in Kotlin</title>
+      <link>https://www.xiaoli-yang.com/2020/07/29/using-arrow-to-handle-errors-and-exceptions-in-kotlin/</link>
+      <pubDate>Wed, 29 Jul 2020 15:06:14 +0200</pubDate>
+      
+      <guid>https://www.xiaoli-yang.com/2020/07/29/using-arrow-to-handle-errors-and-exceptions-in-kotlin/</guid>
+      <description>Overview In functional programming, we deal with exceptions and error Arrow is a FP(functional programming) library in kotlin, which aims to provide an interfaces and abstractions across Kotlin libraries.</description>
+    </item>
+    
+    <item>
+      <title>Common Traps in Python - part 1</title>
+      <link>https://www.xiaoli-yang.com/2020/04/05/common-traps-in-python-part-1/</link>
+      <pubDate>Sun, 05 Apr 2020 08:57:55 +0100</pubDate>
+      
+      <guid>https://www.xiaoli-yang.com/2020/04/05/common-traps-in-python-part-1/</guid>
+      <description>Part 1 - The traps of List in Python 1. Assignment trap Note: Assignment with an = on lists does not make a copy. Instead, assignment makes the two variables point to the one list in memory.
+ colors = [&#39;red&#39;, &#39;blue&#39;, &#39;green&#39;] b = colors ## Does not copy the list b [1] = &amp;quot;yellow&amp;quot; print (colors) # [&#39;red&#39;, &#39;yellow&#39;, &#39;green&#39;] print(b) # [&#39;red&#39;, &#39;yellow&#39;, &#39;green&#39;]  and you may get really risky return</description>
+    </item>
+    
+    <item>
+      <title>10 Basic Tips on Bash Scripting to Optimize Your Operation Work</title>
+      <link>https://www.xiaoli-yang.com/2020/03/01/10-basic-tips-on-bash-scripting-to-optimize-your-operation-work/</link>
+      <pubDate>Sun, 01 Mar 2020 09:57:55 +0100</pubDate>
+      
+      <guid>https://www.xiaoli-yang.com/2020/03/01/10-basic-tips-on-bash-scripting-to-optimize-your-operation-work/</guid>
+      <description>Shell programming is such an essential skill that you need to master, if you want to step further into the Linux/Unix world. Being able to program on shell will accelerate your operation work. Because in daily operation, you cannot avoid searching&amp;amp;analying logs, running and proceeding other system scripts periodically, etc. I know it may bore you easily, that is why I want to write down those tips.
+Bash Shell Script Basics We usually call it as Bash Shell, because Bash is the most widely used shell interpreter.</description>
+    </item>
+    
+    <item>
+      <title>How to depoly MapR kafka app on kubernetes</title>
+      <link>https://www.xiaoli-yang.com/2019/10/08/how-to-depoly-mapr-kafka-app-on-kubernetes/</link>
+      <pubDate>Tue, 08 Oct 2019 09:07:55 +0100</pubDate>
+      
+      <guid>https://www.xiaoli-yang.com/2019/10/08/how-to-depoly-mapr-kafka-app-on-kubernetes/</guid>
+      <description>THe How-to guids to set up kafka python applications on kubernetes, when the msg resource is mapr-stream
+Architecture 1. MapR core 2. The MapR-ES Python Client is a binding for librdkafka that is dependent on the MapR-ES C client (MapR-ES C Client is a distribution of librdkafka that works with MapR-ES). 3. The mapr-streams-python package replace the normal confluent-python package.
+ As of MEP 5.0 MapR-ES Python Client:
+from confluent_kafka import Producer p = Producer({&#39;streams.</description>
+    </item>
+    
+    <item>
+      <title>Advanced Git Usage</title>
+      <link>https://www.xiaoli-yang.com/2019/06/28/advanced-git-usage/</link>
+      <pubDate>Fri, 28 Jun 2019 09:57:55 +0100</pubDate>
+      
+      <guid>https://www.xiaoli-yang.com/2019/06/28/advanced-git-usage/</guid>
+      <description>Introduction Git works more than as a version controlling tool, it glues the teamwork together. It is widely used by almost all developers nowadays. Basic usages can be git-cheatsheet
+However, in some scenarios, more advanced skills are required. In this post, I will present some usages, which can impove our efficiency.
+1. git stash: store temporary dirty working branch Scenario: Interrupted workflow When you are in the middle of coding, your boss comes in and demands that you fix something immediately.</description>
+    </item>
+    
+    <item>
+      <title>Build blob trigger and storage queue for microservice</title>
+      <link>https://www.xiaoli-yang.com/2019/05/07/build-blob-trigger-and-storage-queue-for-microservice/</link>
+      <pubDate>Tue, 07 May 2019 13:26:32 +0200</pubDate>
+      
+      <guid>https://www.xiaoli-yang.com/2019/05/07/build-blob-trigger-and-storage-queue-for-microservice/</guid>
+      <description>In my last blog(here), I have demonstrated how to set up a Blob trigger uing the Microsoft Azure native product: Azure function to handle the events/updates.
+but instead of creating an Azure funtion in cloud, we want an on-premise application, or a microservice with the tigger function embeded.
+Solution 2: using RESTful API conncets Azure Storage Account. Architecture: Steps:  prerequisites create resouce group -&amp;gt; Storage account
+ create Storage queue for storing the messages(events)</description>
+    </item>
+    
+    <item>
+      <title>How to setup Storage Account trigger with Event Grid-1</title>
+      <link>https://www.xiaoli-yang.com/2019/05/07/how-to-setup-storage-account-trigger-with-event-grid-1/</link>
+      <pubDate>Tue, 07 May 2019 13:26:32 +0200</pubDate>
+      
+      <guid>https://www.xiaoli-yang.com/2019/05/07/how-to-setup-storage-account-trigger-with-event-grid-1/</guid>
+      <description>Descriptions we want to build an ’app’ which can listen to a specific &amp;lsquo;storage account&amp;rsquo;, whenever a new file has been uploaded(we take this an event), this app will be triggered to do sth based on the event.
+About Event Grid Components Events - What happened, alerts,facts
+Event sources - Where the event took place.
+Event generator/publisher - e.g. Storage blob
+Topics - One of an endpoint where publishers send events.</description>
+    </item>
+    
+    <item>
+      <title>Errors and Solutions with Hyperledger Fabric</title>
+      <link>https://www.xiaoli-yang.com/2018/06/21/errors-and-solutions-with-hyperledger-fabric/</link>
+      <pubDate>Thu, 21 Jun 2018 16:22:23 +0200</pubDate>
+      
+      <guid>https://www.xiaoli-yang.com/2018/06/21/errors-and-solutions-with-hyperledger-fabric/</guid>
+      <description>Hyperledger fabric is not stable and robust as we thought, usually you may find out conflicts of versions, disappearing docker images, invalid links, unclear descriptions, shabby documentary. like one of the bloger said:
+	I have faced “n” number of errors while I was working in Blockchain project, I have spent countless hours reading out articles, reaching out experts to fix the same. This article is to just help the people who are beginners &amp;amp; struggling to solve the errors that are quite often pop up during your development stage.</description>
+    </item>
+    
+    <item>
+      <title>Know about your CPU</title>
+      <link>https://www.xiaoli-yang.com/2018/05/18/know-about-your-cpu/</link>
+      <pubDate>Fri, 18 May 2018 09:57:55 +0100</pubDate>
+      
+      <guid>https://www.xiaoli-yang.com/2018/05/18/know-about-your-cpu/</guid>
+      <description>Find out what type is your computer&amp;rsquo;s CPU using the command lscpu
+sherry@sherry:~/Documents/Blog/public$ lscpu Architecture: x86_64 CPU op-mode(s): 32-bit, 64-bit Byte Order: Little Endian CPU(s): 4 On-line CPU(s) list: 0-3 Thread(s) per core: 2 Core(s) per socket: 2 Socket(s): 1 NUMA node(s): 1 Vendor ID: GenuineIntel CPU family: 6 Model: 78 Model name: Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz Stepping: 3 CPU MHz: 1291.148 CPU max MHz: 2800,0000 CPU min MHz: 400,0000 BogoMIPS: 4800.</description>
+    </item>
+    
+    <item>
+      <title>Running First Hyperledger Fabric Sample</title>
+      <link>https://www.xiaoli-yang.com/2018/05/15/running-first-hyperledger-fabric-sample/</link>
+      <pubDate>Tue, 15 May 2018 13:57:55 +0100</pubDate>
+      
+      <guid>https://www.xiaoli-yang.com/2018/05/15/running-first-hyperledger-fabric-sample/</guid>
+      <description>Hyperledger Fabric Sample Application This is originally from the Introduction to Hyperledger Technologies course on edX. Link However, if follow the instructions, you may not successfully run the example.
+the overview graph Node.js version When an error occurs, in most case it has something to do with the version of Node.js&amp;rsquo;s version
+completely remove Node.js old version completely uninstall node + npm is to do the following:
+ go to /usr/local/lib and delete any node and node_modules go to /usr/local/include and delete any node and node_modules directory check your Home directory for any local or lib or include folders, and delete any node or node_modules from there go to /usr/local/bin and delete any node executable</description>
+    </item>
+    
+    <item>
+      <title>Feature Selection for unsupervised Learning with R and Python</title>
+      <link>https://www.xiaoli-yang.com/2018/05/13/feature-selection-for-unsupervised-learning-with-r-and-python/</link>
+      <pubDate>Sun, 13 May 2018 09:57:55 +0100</pubDate>
+      
+      <guid>https://www.xiaoli-yang.com/2018/05/13/feature-selection-for-unsupervised-learning-with-r-and-python/</guid>
+      <description>Starting from dimensionality reduction Feature selection is a part technique of data dimensional reduction. According to the book Data minging: concepts and techniques, the most ubiquitous methods are:
+ wavelet transforms principal components analysis (PCA) attribute subset selection(or feature selection)  It is worth mentioning, that PCA, Exploratory Factor Analysis (EFA), SVD, etc are all methods which reconstruct our original attributes. PCA is essentially creates new variables that are linear combinations of the original variables.</description>
+    </item>
+    
+    <item>
+      <title>Test swift via Docker on Ubuntu</title>
+      <link>https://www.xiaoli-yang.com/2017/12/11/test-swift-via-docker-on-ubuntu/</link>
+      <pubDate>Mon, 11 Dec 2017 16:22:23 +0200</pubDate>
+      
+      <guid>https://www.xiaoli-yang.com/2017/12/11/test-swift-via-docker-on-ubuntu/</guid>
+      <description>Foreword Recently I joined a Hololens-Unity AR development project. Since the clients require the backend server running on the MAC server, however not everyone in the Backend team owns a MAC. so we decide to use the docker as the middleware.
+What&amp;rsquo;s docker? https://docs.docker.com/get-started/#setup
+In short when to use the docker? https://hub.docker.com/r/ibmcom/swift-ubuntu/ https://github.com/IBM-Swift/swift-ubuntu-docker</description>
+    </item>
+    
+    <item>
+      <title>Blockchain glossary</title>
+      <link>https://www.xiaoli-yang.com/2017/11/09/blockchain-glossary/</link>
+      <pubDate>Thu, 09 Nov 2017 09:57:55 +0100</pubDate>
+      
+      <guid>https://www.xiaoli-yang.com/2017/11/09/blockchain-glossary/</guid>
+      <description>Preface Block A set of transactions that are bundled together and added to the chain at the same time.
+Blockchain ApplicationIn a blockchain application, the blockchain will store the state of the system, in addition to the immutable record of transactions that created that state. A client application will be used to send transactions to the blockchain. The smart contracts will encode some (if not all) of the business logic.</description>
+    </item>
+    
+    <item>
+      <title>Spark多节点配置</title>
+      <link>https://www.xiaoli-yang.com/2016/03/14/spark%E5%A4%9A%E8%8A%82%E7%82%B9%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Mon, 14 Mar 2016 16:22:23 +0200</pubDate>
+      
+      <guid>https://www.xiaoli-yang.com/2016/03/14/spark%E5%A4%9A%E8%8A%82%E7%82%B9%E9%85%8D%E7%BD%AE/</guid>
+      <description>楔子 这次完全拿到的是裸机，所以从零开始配置。其实集群和单节点差不多，见我前面的blog
+本机配置  Centos 5.8 4 cores 8G  节点布置 Masters&amp;amp;Slaves Master 119.254.168.33 Slaves1 119.254.168.34 Slaves2 119.254.168.36 Slaves3 119.254.168.38  环境配置 Environment JAVA 环境 见Apache Spark单节点安装和环境配置  SCALA 环境 见Apache Spark单节点安装和环境配置  SSH 配置 背景：搭建Hadoop环境需要设置无密码登陆，所谓无密码登陆其实是指通过证书认证的方式登陆 ，使用一种被称为”公私钥”(RSA)认证的方式来进行ssh登录。 在linux系统中,ssh是远程登录的默认工具,因为该工具的协议使用了RSA/DSA的加密算法.该工具做linux系统的远程管理是非常安全的。
+所谓ssh就是ssh免密码登录服务器，其中用到了RSA加密算法。其中的细节和原理我有时间再写。
+确保安装好 ssh：（ubuntu版） $ sudo apt-get update $ sudo apt-get install openssh-server $ sudo /etc/init.d/ssh start ssh(centos): 确认系统已经安装了SSH。 rpm –qa | grep openssh rpm –qa | grep rsync yum install ssh //安装SSH协议 yum install rsync //rsync是一个远程数据同步工具，可通过LAN/WAN快速同步多台主机间的文件 service sshd restart –&amp;gt;启动服务 2.</description>
+    </item>
+    
+    <item>
+      <title>Blog Tool</title>
+      <link>https://www.xiaoli-yang.com/2015/12/27/blog-tool/</link>
+      <pubDate>Sun, 27 Dec 2015 13:26:32 +0200</pubDate>
+      
+      <guid>https://www.xiaoli-yang.com/2015/12/27/blog-tool/</guid>
+      <description>Excerpt  For most blog lovers, they usually experience these three phases. First step, as beginners we feel curious and excited to try all kinds way, where we can post our articles. Writing on a free platform,though the templates or layout looks monotonous,still it is a good choice. Later you may have more requirements which the platform can no longer fulfil, then you choose to buy the domain and setup your own website.</description>
+    </item>
+    
+    <item>
+      <title>Set up a Blog based on Hugo</title>
+      <link>https://www.xiaoli-yang.com/2015/12/21/set-up-a-blog-based-on-hugo/</link>
+      <pubDate>Mon, 21 Dec 2015 16:22:23 +0200</pubDate>
+      
+      <guid>https://www.xiaoli-yang.com/2015/12/21/set-up-a-blog-based-on-hugo/</guid>
+      <description>Hello GitHub! GitHub is more than a collaborative tool to make your software development more effective. In fact, it is more like a community where you share and contribute your code.
+Since we want to build our own blog, so the whole static websites should be stored in Github. Now here we go. sign up in Github
+Okay！ you are now a member of github, enjoy your coding journey!</description>
+    </item>
+    
+  </channel>
+</rss>

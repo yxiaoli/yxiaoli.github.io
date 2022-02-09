@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Azure on Sherry&#39;s blog</title>
+    <link>https://www.xiaoli-yang.com/tags/azure/</link>
+    <description>Recent content in Azure on Sherry&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Powered by [Hugo](//gohugo.io). Content by Xiaoli Yang</copyright>
+    <lastBuildDate>Tue, 07 May 2019 13:26:32 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.xiaoli-yang.com/tags/azure/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Build blob trigger and storage queue for microservice</title>
+      <link>https://www.xiaoli-yang.com/2019/05/07/build-blob-trigger-and-storage-queue-for-microservice/</link>
+      <pubDate>Tue, 07 May 2019 13:26:32 +0200</pubDate>
+      
+      <guid>https://www.xiaoli-yang.com/2019/05/07/build-blob-trigger-and-storage-queue-for-microservice/</guid>
+      <description>In my last blog(here), I have demonstrated how to set up a Blob trigger uing the Microsoft Azure native product: Azure function to handle the events/updates.
+but instead of creating an Azure funtion in cloud, we want an on-premise application, or a microservice with the tigger function embeded.
+Solution 2: using RESTful API conncets Azure Storage Account. Architecture: Steps:  prerequisites create resouce group -&amp;gt; Storage account
+ create Storage queue for storing the messages(events)</description>
+    </item>
+    
+    <item>
+      <title>How to setup Storage Account trigger with Event Grid-1</title>
+      <link>https://www.xiaoli-yang.com/2019/05/07/how-to-setup-storage-account-trigger-with-event-grid-1/</link>
+      <pubDate>Tue, 07 May 2019 13:26:32 +0200</pubDate>
+      
+      <guid>https://www.xiaoli-yang.com/2019/05/07/how-to-setup-storage-account-trigger-with-event-grid-1/</guid>
+      <description>Descriptions we want to build an ’app’ which can listen to a specific &amp;lsquo;storage account&amp;rsquo;, whenever a new file has been uploaded(we take this an event), this app will be triggered to do sth based on the event.
+About Event Grid Components Events - What happened, alerts,facts
+Event sources - Where the event took place.
+Event generator/publisher - e.g. Storage blob
+Topics - One of an endpoint where publishers send events.</description>
+    </item>
+    
+  </channel>
+</rss>

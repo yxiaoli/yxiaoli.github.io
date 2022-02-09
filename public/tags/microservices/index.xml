@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Microservices on Sherry&#39;s blog</title>
+    <link>https://www.xiaoli-yang.com/tags/microservices/</link>
+    <description>Recent content in Microservices on Sherry&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Powered by [Hugo](//gohugo.io). Content by Xiaoli Yang</copyright>
+    <lastBuildDate>Wed, 29 Jul 2020 15:06:14 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.xiaoli-yang.com/tags/microservices/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Three-Stage Branch Model applied in DevOps - CI part</title>
+      <link>https://www.xiaoli-yang.com/2020/07/29/three-stage-branch-model-applied-in-devops-ci-part/</link>
+      <pubDate>Wed, 29 Jul 2020 15:06:14 +0200</pubDate>
+      
+      <guid>https://www.xiaoli-yang.com/2020/07/29/three-stage-branch-model-applied-in-devops-ci-part/</guid>
+      <description>I am working on a data platform project, the product itself is composed of several microservices. Our team is under great pressure of operation and mantainance. Thanks to the DevOps helps us keep the balance of development and deployment.
+In this post, I illustrate how we maintain the CI(continuous integration) part, which contains: the branch strategy we adopt, the concept of DevOps, overview of the workflow, the tips.
+next post, I will continue to explain the CD part(cotinous deployment)</description>
+    </item>
+    
+  </channel>
+</rss>

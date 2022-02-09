@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CPU on Sherry&#39;s blog</title>
+    <link>https://www.xiaoli-yang.com/tags/cpu/</link>
+    <description>Recent content in CPU on Sherry&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Powered by [Hugo](//gohugo.io). Content by Xiaoli Yang</copyright>
+    <lastBuildDate>Fri, 18 May 2018 09:57:55 +0100</lastBuildDate>
+    
+	<atom:link href="https://www.xiaoli-yang.com/tags/cpu/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Know about your CPU</title>
+      <link>https://www.xiaoli-yang.com/2018/05/18/know-about-your-cpu/</link>
+      <pubDate>Fri, 18 May 2018 09:57:55 +0100</pubDate>
+      
+      <guid>https://www.xiaoli-yang.com/2018/05/18/know-about-your-cpu/</guid>
+      <description>Find out what type is your computer&amp;rsquo;s CPU using the command lscpu
+sherry@sherry:~/Documents/Blog/public$ lscpu Architecture: x86_64 CPU op-mode(s): 32-bit, 64-bit Byte Order: Little Endian CPU(s): 4 On-line CPU(s) list: 0-3 Thread(s) per core: 2 Core(s) per socket: 2 Socket(s): 1 NUMA node(s): 1 Vendor ID: GenuineIntel CPU family: 6 Model: 78 Model name: Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz Stepping: 3 CPU MHz: 1291.148 CPU max MHz: 2800,0000 CPU min MHz: 400,0000 BogoMIPS: 4800.</description>
+    </item>
+    
+  </channel>
+</rss>

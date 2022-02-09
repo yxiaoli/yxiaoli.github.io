@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machine Learning on Sherry&#39;s blog</title>
+    <link>https://www.xiaoli-yang.com/tags/machine-learning/</link>
+    <description>Recent content in Machine Learning on Sherry&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Powered by [Hugo](//gohugo.io). Content by Xiaoli Yang</copyright>
+    <lastBuildDate>Sun, 13 May 2018 09:57:55 +0100</lastBuildDate>
+    
+	<atom:link href="https://www.xiaoli-yang.com/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Feature Selection for unsupervised Learning with R and Python</title>
+      <link>https://www.xiaoli-yang.com/2018/05/13/feature-selection-for-unsupervised-learning-with-r-and-python/</link>
+      <pubDate>Sun, 13 May 2018 09:57:55 +0100</pubDate>
+      
+      <guid>https://www.xiaoli-yang.com/2018/05/13/feature-selection-for-unsupervised-learning-with-r-and-python/</guid>
+      <description>Starting from dimensionality reduction Feature selection is a part technique of data dimensional reduction. According to the book Data minging: concepts and techniques, the most ubiquitous methods are:
+ wavelet transforms principal components analysis (PCA) attribute subset selection(or feature selection)  It is worth mentioning, that PCA, Exploratory Factor Analysis (EFA), SVD, etc are all methods which reconstruct our original attributes. PCA is essentially creates new variables that are linear combinations of the original variables.</description>
+    </item>
+    
+  </channel>
+</rss>

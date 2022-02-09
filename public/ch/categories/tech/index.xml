@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tech on 阿歇的博客</title>
+    <link>https://www.xiaoli-yang.com/ch/categories/tech/</link>
+    <description>Recent content in tech on 阿歇的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Powered by [Hugo](//gohugo.io). Content by Xiaoli Yang</copyright>
+    <lastBuildDate>Fri, 08 Jan 2016 13:26:32 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.xiaoli-yang.com/ch/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Apache Spark安装和环境配置</title>
+      <link>https://www.xiaoli-yang.com/ch/2016/01/08/apache-spark%E5%AE%89%E8%A3%85%E5%92%8C%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Fri, 08 Jan 2016 13:26:32 +0200</pubDate>
+      
+      <guid>https://www.xiaoli-yang.com/ch/2016/01/08/apache-spark%E5%AE%89%E8%A3%85%E5%92%8C%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
+      <description>Excerpt The Desiderata (part 2)
+by Max Ehrmann, 1927
+ If you compare yourself with others,
+you may become vain or bitter;
+for always there will be greater and lesser persons than yourself.
+Enjoy your achievements as well as your plans.
+Keep interested in your own career, however humble;
+it is a real possession in the changing fortunes of time. –TBC
+ 安装方式  源码编译  需要从github上clone下来， 通过maven 或者 sbt 进行编译。读者可以到官网 上进行下载。</description>
+    </item>
+    
+  </channel>
+</rss>

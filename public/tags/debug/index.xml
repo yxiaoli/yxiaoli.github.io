@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>debug on Sherry&#39;s blog</title>
+    <link>https://www.xiaoli-yang.com/tags/debug/</link>
+    <description>Recent content in debug on Sherry&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Powered by [Hugo](//gohugo.io). Content by Xiaoli Yang</copyright>
+    <lastBuildDate>Thu, 21 Jun 2018 16:22:23 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.xiaoli-yang.com/tags/debug/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Errors and Solutions with Hyperledger Fabric</title>
+      <link>https://www.xiaoli-yang.com/2018/06/21/errors-and-solutions-with-hyperledger-fabric/</link>
+      <pubDate>Thu, 21 Jun 2018 16:22:23 +0200</pubDate>
+      
+      <guid>https://www.xiaoli-yang.com/2018/06/21/errors-and-solutions-with-hyperledger-fabric/</guid>
+      <description>Hyperledger fabric is not stable and robust as we thought, usually you may find out conflicts of versions, disappearing docker images, invalid links, unclear descriptions, shabby documentary. like one of the bloger said:
+	I have faced “n” number of errors while I was working in Blockchain project, I have spent countless hours reading out articles, reaching out experts to fix the same. This article is to just help the people who are beginners &amp;amp; struggling to solve the errors that are quite often pop up during your development stage.</description>
+    </item>
+    
+  </channel>
+</rss>

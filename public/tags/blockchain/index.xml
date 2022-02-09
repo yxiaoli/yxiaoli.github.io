@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blockchain on Sherry&#39;s blog</title>
+    <link>https://www.xiaoli-yang.com/tags/blockchain/</link>
+    <description>Recent content in Blockchain on Sherry&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Powered by [Hugo](//gohugo.io). Content by Xiaoli Yang</copyright>
+    <lastBuildDate>Thu, 21 Jun 2018 16:22:23 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.xiaoli-yang.com/tags/blockchain/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Errors and Solutions with Hyperledger Fabric</title>
+      <link>https://www.xiaoli-yang.com/2018/06/21/errors-and-solutions-with-hyperledger-fabric/</link>
+      <pubDate>Thu, 21 Jun 2018 16:22:23 +0200</pubDate>
+      
+      <guid>https://www.xiaoli-yang.com/2018/06/21/errors-and-solutions-with-hyperledger-fabric/</guid>
+      <description>Hyperledger fabric is not stable and robust as we thought, usually you may find out conflicts of versions, disappearing docker images, invalid links, unclear descriptions, shabby documentary. like one of the bloger said:
+	I have faced “n” number of errors while I was working in Blockchain project, I have spent countless hours reading out articles, reaching out experts to fix the same. This article is to just help the people who are beginners &amp;amp; struggling to solve the errors that are quite often pop up during your development stage.</description>
+    </item>
+    
+    <item>
+      <title>Running First Hyperledger Fabric Sample</title>
+      <link>https://www.xiaoli-yang.com/2018/05/15/running-first-hyperledger-fabric-sample/</link>
+      <pubDate>Tue, 15 May 2018 13:57:55 +0100</pubDate>
+      
+      <guid>https://www.xiaoli-yang.com/2018/05/15/running-first-hyperledger-fabric-sample/</guid>
+      <description>Hyperledger Fabric Sample Application This is originally from the Introduction to Hyperledger Technologies course on edX. Link However, if follow the instructions, you may not successfully run the example.
+the overview graph Node.js version When an error occurs, in most case it has something to do with the version of Node.js&amp;rsquo;s version
+completely remove Node.js old version completely uninstall node + npm is to do the following:
+ go to /usr/local/lib and delete any node and node_modules go to /usr/local/include and delete any node and node_modules directory check your Home directory for any local or lib or include folders, and delete any node or node_modules from there go to /usr/local/bin and delete any node executable</description>
+    </item>
+    
+    <item>
+      <title>Blockchain glossary</title>
+      <link>https://www.xiaoli-yang.com/2017/11/09/blockchain-glossary/</link>
+      <pubDate>Thu, 09 Nov 2017 09:57:55 +0100</pubDate>
+      
+      <guid>https://www.xiaoli-yang.com/2017/11/09/blockchain-glossary/</guid>
+      <description>Preface Block A set of transactions that are bundled together and added to the chain at the same time.
+Blockchain ApplicationIn a blockchain application, the blockchain will store the state of the system, in addition to the immutable record of transactions that created that state. A client application will be used to send transactions to the blockchain. The smart contracts will encode some (if not all) of the business logic.</description>
+    </item>
+    
+  </channel>
+</rss>
