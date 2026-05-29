@@ -1,0 +1,7 @@
+{{ with .Site.Params.support }}
+<div style="text-align:center; margin: 2rem 0 1rem;">
+  {{ if .kofi }}<a class="support-link" href="https://ko-fi.com/{{ .kofi }}" target="_blank" rel="noopener">☕ Support on Ko-fi</a>{{ end }}
+  {{ if .patreon }}<a class="support-link" href="https://patreon.com/{{ .patreon }}" target="_blank" rel="noopener">Patreon</a>{{ end }}
+  {{ if .bmc }}<a class="support-link" href="https://buymeacoffee.com/{{ .bmc }}" target="_blank" rel="noopener">Buy me a coffee</a>{{ end }}
+</div>
+{{ end }}

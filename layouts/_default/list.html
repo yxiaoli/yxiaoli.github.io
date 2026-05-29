@@ -1,0 +1,64 @@
+{{ define "main" }}
+<section class="max-w-prose mx-auto py-8">
+  {{/* Botanical marker for top-level sections */}}
+  {{ $section := .Section }}
+  {{ if .IsSection }}
+    {{ with .File }}
+      {{ $section = .ContentBaseName }}
+      {{ if eq $section "_index" }}{{ $section = .Dir | path.Base }}{{ end }}
+    {{ end }}
+  {{ end }}
+  <div style="text-align:center; margin-bottom:0.5rem;">
+    {{ partial "botanical-marker.html" $section }}
+  </div>
+
+  <h1 style="text-align:center; font-style:italic;">{{ .Title }}</h1>
+  {{ with .Description }}
+    <div style="text-align:center; font-style:italic; color: var(--sage); font-size:0.95rem; margin-bottom:1.5rem;">— {{ . }}</div>
+  {{ end }}
+
+  <div class="botanical-rule"></div>
+
+  {{ with .Content }}
+    <div class="prose">{{ . }}</div>
+  {{ end }}
+
+  <div class="article-list" style="margin-top:1rem;">
+    {{ $pages := where .Pages "Type" "!=" "page" }}
+    {{ if not $pages }}{{ $pages = .Pages }}{{ end }}
+    {{ range $pages.ByDate.Reverse }}
+      <article>
+        <a href="{{ .RelPermalink }}" style="text-decoration:none; color:inherit;">
+          <h3>{{ .Title }}</h3>
+        </a>
+        {{ with .Params.summary }}
+          <p style="font-size:0.95rem; color:#5a5240; margin:0 0 0.35rem; line-height:1.6;">{{ . }}</p>
+        {{ end }}
+        <div class="meta">
+          {{ .Date.Format "2006" }}
+          {{ with .Params.topics }} · {{ index . 0 }}{{ end }}
+          {{ if .Params.tags }} · {{ delimit (first 3 .Params.tags) " · " }}{{ end }}
+        </div>
+      </article>
+    {{ end }}
+  </div>
+
+  {{/* Sub-sections */}}
+  {{ $subs := where .Sections "Type" "!=" "page" }}
+  {{ if $subs }}
+    <div style="margin-top:2.5rem;">
+      <div class="meta" style="text-align:center; margin-bottom:1rem;">— SUBSECTIONS —</div>
+      {{ range $subs }}
+        <a href="{{ .RelPermalink }}" style="display:block; text-align:center; padding:0.75rem 0; border-bottom:1px solid var(--divider); text-decoration:none; color:inherit;">
+          <span style="font-style:italic; font-size:1.1rem;">{{ .Title }}</span>
+          {{ with .Description }}<span style="color: var(--sage-faded); font-size:0.85rem;"> — {{ . }}</span>{{ end }}
+        </a>
+      {{ end }}
+    </div>
+  {{ end }}
+
+  <div style="text-align:center; margin-top:2rem; opacity:0.4;">
+    <svg width="60" height="14" viewBox="0 0 60 14"><path d="M5,7 L25,7 M35,7 L55,7" stroke="#6b6450" stroke-width="0.5"/><circle cx="30" cy="7" r="1.5" stroke="#6b6450" stroke-width="0.5" fill="none"/></svg>
+  </div>
+</section>
+{{ end }}

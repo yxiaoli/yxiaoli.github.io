@@ -1,0 +1,51 @@
+colorScheme = "botanical"
+defaultAppearance = "light"
+autoSwitchAppearance = false
+
+[homepage]
+  layout = "custom"
+  showRecent = false
+
+[article]
+  showDate = true
+  showDateUpdated = false
+  showAuthor = false
+  showBreadcrumbs = false
+  showTableOfContents = false
+  showTaxonomies = false
+  showWordCount = false
+  showRelatedContent = true
+  relatedContentLimit = 4
+  sharingLinks = []
+
+[list]
+  showBreadcrumbs = false
+  groupByYear = false
+
+[taxonomy]
+  showTermCount = true
+
+[search]
+  provider = "fuse"
+
+[header]
+  layout = "basic"
+
+[footer]
+  showCopyright = true
+  showThemeAttribution = false
+  showAppearanceSwitcher = false
+  showScrollToTop = false
+
+# Comments — fill in repoId/categoryId after running https://giscus.app
+[giscus]
+  repo = "yxiaoli/yxiaoli.github.io"
+  repoId = "MDEwOlJlcG9zaXRvcnkxNzI2NzYxNzU="
+  category = "General"
+  categoryId = "DIC_kwDOCkrUT84C94ef"
+
+# Support / tip jar — fill in your usernames (leave blank to hide)
+[support]
+  kofi = ""              # e.g. "xiaoliyang"
+  patreon = ""           # e.g. "xiaoliyang"
+  bmc = ""               # buymeacoffee username

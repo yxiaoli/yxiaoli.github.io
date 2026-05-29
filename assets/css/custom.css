@@ -1,0 +1,192 @@
+/* ============================================================
+   Botanical Journal — Strict 2-font typography
+   Serif: EB Garamond (titles, body)
+   Sans:  Inter (metadata only)
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  --paper: #f5f2e8;
+  --paper-2: #ede4d0;
+  --ink: #2d2a22;
+  --sage: #6b6450;
+  --sage-faded: #8a7c5e;
+  --divider: #d4cdb8;
+  --serif: 'EB Garamond', Georgia, 'Times New Roman', serif;
+  --sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --mono: 'SF Mono', Menlo, Consolas, monospace;
+}
+
+/* ---- Base ---- */
+body, .dark body {
+  background-color: var(--paper) !important;
+  color: var(--ink) !important;
+  font-family: var(--serif);
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  font-weight: 400;
+}
+
+/* ---- Headings: ONLY 3 sizes, serif italic ---- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--serif);
+  color: var(--ink) !important;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+h1 { font-size: 1.875rem; line-height: 1.25; font-weight: 500; }
+h2 { font-size: 1.4rem; line-height: 1.4; font-style: italic; font-weight: 500; margin-top: 2rem; }
+h3 { font-size: 1.15rem; line-height: 1.4; font-style: italic; font-weight: 500; margin-top: 1.5rem; }
+h4, h5, h6 { font-size: 1.05rem; font-style: italic; font-weight: 500; }
+
+/* Center page-level h1/h2 on lists */
+section > h1, section > h2 { text-align: center; }
+
+/* ---- Body text ---- */
+p, li {
+  font-family: var(--serif);
+  font-size: 1.0625rem;
+  line-height: 1.85;
+  color: var(--ink);
+}
+
+article a, .prose a, p a, li a {
+  color: var(--sage) !important;
+  text-decoration: underline;
+  text-decoration-color: var(--divider);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+article a:hover, .prose a:hover { color: var(--ink) !important; text-decoration-color: var(--sage); }
+
+/* ---- Metadata: Inter, ONE size ---- */
+.meta, .article-meta, .breadcrumbs, time,
+nav a, header nav a, .badge, .tag,
+footer, footer a,
+th {
+  font-family: var(--sans) !important;
+  font-size: 0.7rem !important;
+  letter-spacing: 0.15em !important;
+  text-transform: uppercase;
+  color: var(--sage-faded) !important;
+  font-weight: 500;
+}
+
+/* Nav links specifically */
+nav a, header nav a {
+  color: var(--sage) !important;
+  text-decoration: none;
+}
+nav a:hover, header nav a:hover { color: var(--ink) !important; }
+
+/* ---- Header / Footer ---- */
+header, .header, footer {
+  background-color: var(--paper) !important;
+  border-color: var(--divider) !important;
+}
+footer { border-top: 1px solid var(--divider); }
+
+/* ---- Article cards in lists ---- */
+article.card, .article-list article {
+  background-color: transparent !important;
+  border: none !important;
+  border-bottom: 1px solid var(--divider) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 1.25rem 0 !important;
+}
+.article-list article:last-child { border-bottom: none !important; }
+
+/* List item titles use h3 size, italic */
+.article-list h2, .article-list h3 {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.15rem;
+  font-weight: 500;
+  margin: 0 0 0.25rem;
+}
+
+/* ---- Code ---- */
+pre, code, kbd, samp {
+  font-family: var(--mono) !important;
+}
+pre {
+  background-color: var(--paper-2) !important;
+  border-left: 2px solid var(--sage);
+  border-radius: 0 !important;
+  padding: 1rem 1.25rem !important;
+  font-size: 0.85rem;
+  color: #3a3220;
+  overflow-x: auto;
+}
+code {
+  background-color: var(--paper-2) !important;
+  color: #3a3220 !important;
+  padding: 0.1rem 0.35rem !important;
+  border-radius: 2px !important;
+  font-size: 0.85em;
+}
+pre code { background-color: transparent !important; padding: 0 !important; }
+
+/* ---- Blockquote ---- */
+blockquote {
+  border-left: 2px solid var(--sage) !important;
+  padding-left: 1rem;
+  font-style: italic;
+  color: #5a5240;
+  margin: 1.25rem 0;
+  font-family: var(--serif);
+}
+
+/* ---- Tables ---- */
+table { border-collapse: collapse; font-size: 0.95rem; font-family: var(--serif); }
+th, td { border-bottom: 1px solid var(--divider) !important; padding: 0.5rem 0.75rem !important; text-align: left; }
+
+/* ---- Tags / badges ---- */
+.badge, .tag {
+  background-color: transparent !important;
+  border: 1px solid var(--divider) !important;
+  color: var(--sage) !important;
+  border-radius: 2px !important;
+  padding: 0.15rem 0.5rem !important;
+}
+.badge:hover, .tag:hover { background-color: var(--paper-2) !important; color: var(--ink) !important; }
+
+/* ---- Decorative ornament ---- */
+.botanical-rule {
+  text-align: center;
+  margin: 1.5rem auto 2rem;
+  height: 14px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='60' height='14' viewBox='0 0 60 14'><path d='M5,7 L25,7 M35,7 L55,7' stroke='%236b6450' stroke-width='0.5'/><circle cx='30' cy='7' r='1.5' stroke='%236b6450' stroke-width='0.5' fill='none'/></svg>");
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+
+/* ---- Hero ---- */
+.hero, .home-hero { background-color: transparent !important; border: none !important; text-align: center; padding: 3rem 1rem; }
+
+/* ---- Container ---- */
+main, article { max-width: 42rem; margin: 0 auto; }
+.prose hr { border-color: var(--divider) !important; margin: 2rem auto; width: 50%; }
+
+/* ---- Comments (giscus) ---- */
+.giscus { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--divider); }
+.giscus-frame { color-scheme: light; }
+
+/* ---- Support link ---- */
+.support-link {
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--sage) !important;
+  border: 1px solid var(--divider);
+  padding: 0.4rem 0.9rem;
+  border-radius: 2px;
+  text-decoration: none !important;
+  margin: 0.5rem 0.25rem;
+}
+.support-link:hover { background-color: var(--paper-2); color: var(--ink) !important; }

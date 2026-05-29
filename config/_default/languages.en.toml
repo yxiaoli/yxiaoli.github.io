@@ -1,0 +1,10 @@
+languageName = "English"
+weight = 1
+title = "Xiaoli's Knowledge Base"
+
+[params.author]
+  name = "Xiaoli Yang"
+  headline = "Think · Code · Art"
+  links = [
+    { github = "https://github.com/yxiaoli" },
+  ]

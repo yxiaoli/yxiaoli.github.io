@@ -1,0 +1,62 @@
+{{ define "main" }}
+<article class="max-w-prose mx-auto py-8">
+
+  {{/* Breadcrumb */}}
+  {{ with .Parent }}
+    <div class="meta" style="margin-bottom:1.5rem;">
+      <a href="/">JOURNAL</a>
+      {{ range .Ancestors.Reverse }}
+        {{ if not .IsHome }} → <a href="{{ .RelPermalink }}">{{ .Title | upper }}</a>{{ end }}
+      {{ end }}
+      → <a href="{{ .RelPermalink }}">{{ .Title | upper }}</a>
+    </div>
+  {{ end }}
+
+  {{/* Title */}}
+  <h1 style="margin:0 0 0.4rem;">{{ .Title }}</h1>
+
+  {{ with .Params.summary }}
+    <div style="font-style:italic; color: var(--sage); margin-bottom:0.5rem; line-height:1.5;">{{ . }}</div>
+  {{ end }}
+
+  <div class="meta">
+    {{ .Date.Format "January 2006" }}
+    {{ with .ReadingTime }} · {{ . }} MIN{{ end }}
+    {{ with .Params.tags }} · {{ delimit (first 4 .) " · " }}{{ end }}
+  </div>
+
+  <div class="botanical-rule"></div>
+
+  {{/* Body */}}
+  <div class="prose">
+    {{ .Content }}
+  </div>
+
+  {{/* Related */}}
+  {{ $related := .Site.RegularPages.Related . | first 4 }}
+  {{ if $related }}
+    <div style="border-top:1px solid var(--divider); margin-top:2.5rem; padding-top:1.5rem;">
+      <div class="meta" style="margin-bottom:0.75rem;">— RELATED —</div>
+      {{ range $related }}
+        <div style="margin-bottom:0.5rem;">
+          <a href="{{ .RelPermalink }}" style="font-style:italic; text-decoration:none;">{{ .Title }}</a>
+        </div>
+      {{ end }}
+    </div>
+  {{ end }}
+
+  {{/* Support link */}}
+  {{ partial "support.html" . }}
+
+  {{/* Comments */}}
+  {{ partial "giscus.html" . }}
+
+  {{/* End ornament */}}
+  <div style="text-align:center; margin-top:2.5rem; opacity:0.4;">
+    <svg width="60" height="20" viewBox="0 0 60 20">
+      <path d="M20,10 Q26,4 30,10 Q34,16 40,10" stroke="#6b6450" stroke-width="0.6" fill="none"/>
+      <circle cx="30" cy="10" r="1" fill="#6b6450"/>
+    </svg>
+  </div>
+</article>
+{{ end }}

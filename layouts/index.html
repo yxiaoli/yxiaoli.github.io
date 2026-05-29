@@ -1,0 +1,68 @@
+{{ define "main" }}
+<section class="max-w-prose mx-auto py-12">
+
+  {{/* Header ornament */}}
+  <div style="text-align:center; margin-bottom:0.5rem;">
+    <svg width="50" height="20" viewBox="0 0 40 20" style="opacity:0.5;">
+      <path d="M2,10 Q10,2 20,10 T38,10" stroke="#6b6450" stroke-width="0.8" fill="none"/>
+      <circle cx="20" cy="10" r="0.8" fill="#6b6450"/>
+    </svg>
+  </div>
+
+  <div style="text-align:center;">
+    <div class="meta" style="margin-bottom:0.25rem;">XIAOLI · YANG</div>
+    <h1 style="font-style:italic; font-weight:500; margin:0 0 0.4rem;">a journal of thoughts</h1>
+    <div class="meta" style="margin-bottom:2.5rem;">THINK · CODE · ART</div>
+  </div>
+
+  {{/* Latest */}}
+  {{ $latest := first 1 (where .Site.RegularPages "Type" "!=" "page") }}
+  {{ range $latest }}
+    <div style="border-top:1px solid var(--divider); padding-top:1.5rem;">
+      <div class="meta" style="margin-bottom:0.75rem;">LATEST</div>
+      <a href="{{ .RelPermalink }}" style="text-decoration:none; color:inherit;">
+        <h2 style="font-style:italic; margin:0 0 0.4rem;">{{ .Title }}</h2>
+      </a>
+      {{ with .Params.summary }}
+        <p style="color:#5a5240; line-height:1.7; margin:0 0 0.4rem;">{{ . }}</p>
+      {{ end }}
+      <div class="meta">
+        {{ .Date.Format "January 2006" }}
+        {{ with .Params.topics }} · {{ index . 0 }}{{ end }}
+        {{ with .ReadingTime }} · {{ . }} MIN{{ end }}
+      </div>
+    </div>
+  {{ end }}
+
+  {{/* Sections */}}
+  <div style="border-top:1px solid var(--divider); margin-top:2rem; padding-top:1.5rem;">
+    <div class="meta" style="margin-bottom:1rem;">CATEGORIES</div>
+    {{ range .Site.Sections }}
+      {{ if .IsSection }}
+        {{ $secName := .Section }}
+        {{ with .File }}{{ $secName = .ContentBaseName }}{{ end }}
+        <div style="display:grid; grid-template-columns:50px 1fr; gap:14px; margin-bottom:1.25rem; align-items:start;">
+          <div style="margin-top:4px;">{{ partial "botanical-marker.html" $secName }}</div>
+          <div>
+            <a href="{{ .RelPermalink }}" style="text-decoration:none; color:inherit;">
+              <div style="font-style:italic; font-size:1.15rem;">{{ .Title }}</div>
+            </a>
+            {{ with .Description }}
+              <div style="font-style:italic; color: var(--sage); font-size:0.9rem; margin-top:2px;">— {{ . }}</div>
+            {{ end }}
+            <div class="meta" style="margin-top:4px;">{{ len .Pages }} ENTRIES</div>
+          </div>
+        </div>
+      {{ end }}
+    {{ end }}
+  </div>
+
+  {{/* Support link in homepage footer area */}}
+  {{ partial "support.html" . }}
+
+  {{/* End ornament */}}
+  <div style="text-align:center; margin-top:2rem; opacity:0.4;">
+    <svg width="60" height="14" viewBox="0 0 60 14"><path d="M5,7 L25,7 M35,7 L55,7" stroke="#6b6450" stroke-width="0.5"/><circle cx="30" cy="7" r="1.5" stroke="#6b6450" stroke-width="0.5" fill="none"/></svg>
+  </div>
+</section>
+{{ end }}

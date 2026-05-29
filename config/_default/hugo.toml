@@ -1,0 +1,30 @@
+baseURL = "https://www.xiaoli-yang.com"
+defaultContentLanguage = "en"
+enableRobotsTXT = true
+summaryLength = 30
+theme = "blowfish"
+
+[pagination]
+  pagerSize = 10
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  topic = "topics"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = true
+  [[related.indices]]
+    name = "tags"
+    weight = 100
+  [[related.indices]]
+    name = "categories"
+    weight = 80
+  [[related.indices]]
+    name = "topics"
+    weight = 60
