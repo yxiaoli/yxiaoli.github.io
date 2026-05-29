@@ -1,4 +1,4 @@
-# Botanical Journal — Pickup Guide
+# My Journal — Guide
 
 A Hugo blog. Source lives here; static output is built and deployed by GitHub Actions to `yxiaoli.github.io`.
 
