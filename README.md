@@ -156,17 +156,6 @@ https://github.com/yxiaoli/yxiaoli.github.io/settings/pages
 
 ---
 
-## 🌐 Custom domain (xiaoli-yang.com)
-
-When ready:
-1. Add a file `static/CNAME` containing one line: `www.xiaoli-yang.com`
-2. At your DNS registrar:
-   - `A` records on apex `xiaoli-yang.com` → `185.199.108.153 / .109.153 / .110.153 / .111.153`
-   - `CNAME` for `www` → `yxiaoli.github.io`
-3. Repo Settings → Pages → Custom domain → set, then enable HTTPS
-
----
-
 ## 📌 Pinned versions (don't upgrade casually)
 
 - **Hugo 0.139.0 extended** at `~/bin/hugo`
